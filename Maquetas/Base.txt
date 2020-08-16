@@ -1,0 +1,28 @@
+
+
+REQUERIMIENTOS FUNCIONALES
+    Usuario: 
+    Sistema: servicios y restriscciones.    
+ESPECIFICACIONES
+DISEÑO
+PROGRAMACION
+REQUISITOS NO FUNCIONALES: seguridad, desempeño, usabilidad, protabilidad, etc
+
+Cual es el negocio detras del sistema o pagina web.
+Cual es la razon para construir este software.
+Cueal es el objetivo del software.
+
+
+VISTA PREVIA A LOS REQUIRIMIENTOS:
+
+
+
+
+
+
+
+HORAS HOMBRE UF: 36 USD | APLICAR:0. 5UF=18
+SPIKE: 2 dias
+DIAS: 30
+HORAS POR DIA: 8
+FACTOR DE FOCO: 1.2

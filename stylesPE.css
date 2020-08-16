@@ -1,0 +1,500 @@
+:root{
+    --first-color:#007BDF;
+    --first-color-alt:#006DC6;
+    --second-color:#00CBFF;
+    --second-color-alt:#00BFF0;
+    --thirt-color:#FF3C32;
+    --thirt-color-rgba: rgba(255,60,50,.5);
+    --thirt-color-alt: #FF2419;
+    --accent-color: #FBA905;
+    --accent-color-alt: #F1A000;
+    --dark-color: #282d31;  
+    --dark-color-alt: #141618;
+    --border-color:#DFE0E0;
+    --text-color:#53575A;
+    --body-bg:#fafdff;
+    --font-main:sans-serif;
+    --font-size:16px;
+    --line-height:1.6;
+    --header-height:8rem;
+    --max-width:1200px;  
+}
+a{
+    color: var(--second-color-alt);
+    transition: color .3s ease-in;
+}
+a:hover{
+    color: var(--first-color-alt);
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--font-main);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+*,
+*::after,/*Pseudoelmento*/
+*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    text-align: center;
+    background-color: var(--first-color);
+    color: var(--border-color);
+    font-size: 1.25rem;
+}
+.main{
+    padding-top: calc(var(--header-height) + 1rem);
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+.main article{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+    border-radius: 3px;
+    box-shadow: 4px 4px 5px var(--text-color); 
+    /*sombra de cuadro: desplazamiento-h | desplazamiento-v | difuminado | difuminar | color | recuadro*/ 
+}
+h2{
+    color: var(--thirt-color);
+    padding-left: 1em;
+}
+ul{
+    padding-left: 1em;
+}
+.p1{
+    margin: 1rem;
+    margin-top: 0;
+}
+.p1::first-line{
+    color: var(--thirt-color);
+}
+h5{
+    margin-top: 1em;
+}
+.p2{
+    white-space: pre;
+    margin-top: -1.5em;
+    margin-left: -4em;
+}
+.p2::first-letter{/* Haciendo letra Capital*/
+    font-size: 2.3em;
+    margin-right: .5em;
+    margin-top: -.8em;
+    float: left;
+    line-height: 1em;
+    font-family: serif;
+    color: red;
+}
+.p3{
+    margin-left: 1em;
+    border: 1px solid #000;
+    display: table;
+}
+.p3::after{
+    content: attr(class);
+    display: block;
+    
+    background: var(--accent-color);
+    color: red;
+}
+p{
+    margin-left: 1em;
+}
+span[data-decription]{
+    position: relative;
+    text-decoration: underline;
+    color: var(--first-color);
+    cursor: help;
+}
+span[data-decription]:hover::after{
+    content: attr(data-decription);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    background-color: #ffffcc;
+    padding: 12px;
+    color: var(--first-color-alt);
+    font-size: 14px;
+    z-index: 1;
+
+}
+.Quotes{
+    quotes: '\201C' '\201D';
+}
+.Quotes::before{
+    content: open-quote;
+}
+.Quotes::after{
+    content: close-quote;
+}
+.usd::before{
+    content: "$ ";
+}
+.pen::before{
+    content: "s/ ";
+}
+.cop::before{
+    content: "$ ";
+}
+.moneda::after{
+    content: ".00";
+}
+.moneda{
+    margin-top: -1em;
+    margin-left: 5em;
+}
+.mensaje{
+    font-size: 1.8em;
+    display: table;
+}
+.mensaje::after{
+    content: '';
+    display: block;
+    height: 3px;
+    background: var(--thirt-color);
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: .3s;
+}   
+.mensaje:hover::after{
+    transform: scale(1,1); 
+}
+/*.corazon{
+    margin-left: 35em;
+    margin-top: -1em;
+}*/
+.precios{
+    margin: 1em; 
+    width: 400px;
+    height: 300px;
+}
+/*dibujando un corazon*/
+.before-after{
+    margin-left: 20em;
+    margin-top: -30em;
+    margin-bottom: -10em;
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;  
+    /*background: green;*/
+    
+}
+.corazon{  
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+    background: var(--thirt-color);
+    transform: rotate(45deg);
+    box-shadow: 5px 5px 50px 23.8px rgba(0, 0, 0, 0.5)inset;
+    
+}
+.corazon::before{
+    content:'';
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    background: var(--thirt-color);
+    margin-top: calc(var(--size)*-0.5);
+    border-radius: 50%;
+    box-shadow: -15px 80px 50px 1px rgba(0, 0, 0, .5)inset;
+}
+.corazon::after{
+    content:'';
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    background: var(--thirt-color);
+    margin-top: calc(var(--size)*-0.5);
+    margin-left: calc(var(--size)*-0.5);
+    border-radius: 50%;
+    box-shadow: 80px -15px 50px 1px rgba(0, 0, 0, .5)inset;
+}
+/*box-shadow: h-offset v-offset blur spread color|inset*/
+.corazon:hover{
+    animation: beat .5s infinite alternate ease-in-out;
+    
+}
+@keyframes beat{
+    to{
+        transform: rotate(45deg) scale(1.05);
+    }
+}
+/*introduciendo imagen a las listas check*/
+/*lista 1*/
+
+.img-initial{
+    --size: calc(100% / 4);
+    width: var(--size);
+    height: 100%;
+    margin-left: 2em;
+}
+.lista, .listao{
+    list-style-type: none;
+}
+.XD::before{
+    content:'';
+    background: url(./img/check.png);
+    background-size: contain;
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    margin-right: .5em;
+}
+/*lista 2*/
+.counter-initial{
+    --size: calc(100% / 4);
+    width: var(--size);
+    height: 100%;
+    margin-left: calc(100% / 4);
+    margin-top: -21.1em;
+    margin-bottom: 10em;
+    
+}
+.chapters{
+    counter-reset: lol;/*creamos variable lol para el reseteo*/
+}
+.chapter{
+    margin-left: 1em;
+    counter-increment: lol;/*incrementamos en +1 a la variable*/
+
+}
+.chapter::before{
+    content: counter(lol)'. ';/*imprime el valor de la variable lol*/
+    color: red;
+    margin-right: .5em;
+}
+/*lista 3*/
+.counters{
+    --size: calc(100% / 4);
+    width: var(--size);
+    height: 100%;
+    margin-left: calc(100% / 2);
+    margin-top: -21em;
+    margin-bottom: 1em;
+}
+.list1{
+    counter-reset: lol2;
+}
+.items{
+    counter-increment: lol2;
+    list-style: none;
+    margin-left: 1em;
+}
+.items::before{
+    content: counters(lol2, '.')'. ';
+    color: var(--thirt-color);
+    font-size: .85em
+}
+.temary{
+    --size: calc(100% / 4);
+    width: var(--size);
+    height: 100%;
+    margin-left: calc(100% /1.335);
+    margin-top: -24.5em;
+    margin-bottom: 1em;
+    margin-right: -5em;
+    counter-reset: classes; 
+}
+.class{
+    counter-increment: classes;
+    counter-reset: topics;
+}
+.class-topic{
+    counter-increment: topics;
+}
+.class-title::before{
+    content: counter(classes)'. ';
+    color: red;
+    margin-right: .5em;
+}
+.class-topic::before{
+    content: counter(topics)'. ';
+    color: red;
+    margin-right: .5em;
+}
+.degradado-lineal{
+    height: 10em;
+    margin: 1em;
+    background-image:  linear-gradient(green, blue); 
+}
+.degradado-lineal2{
+    height: 10em;
+    margin: 1em;
+    background-image: linear-gradient(green 40%, blue, green 60%);
+}
+.degradado-lineal3{
+    margin: 1em; 
+    width: 15em;
+    height: 15em;
+    background-image: linear-gradient(to bottom left, lime, blue, violet);
+}
+.degradado-lineal4{
+    margin: 1em;
+    height: 15em;
+    background-image: repeating-linear-gradient(#42b883 20px, #347474 50px);
+}
+.degradado-lineal5{
+    
+    margin: 1em; 
+    width: 15em;
+    height: 15em;
+    background-image: radial-gradient(at 0 50%, #43ab92, #f75f00, cyan,  #ff6363); 
+}
+.degradado-lineal6{
+    
+    margin-left: 19.7em; 
+    margin-top: -16em;
+    width: 15em;
+    height: 15em;
+    background-image: radial-gradient(closest-side, red 100%, blue 100%);
+}
+.degradado-lineal7{
+    margin-left: 38.5em; 
+    margin-top: -15em;
+    width: 15em;
+    height: 15em;
+    background-image: repeating-radial-gradient(black 0, black 20px, white 20px, white 40px);
+}
+.degradado-lineal8{
+    margin-left: 57em; 
+    margin-top: -15em;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px black;
+    /*DATA: se escribe el codigo o dibuja segun que objetos 
+    deben estar por delante o primero como una especie de capas*/
+    background: radial-gradient(closest-side circle at 50% 75%, white 23%, transparent 23%),
+                radial-gradient(closest-side circle at 50% 25%, black 25%, transparent 25%),
+                radial-gradient(closest-side circle at 50% 25%, white 100%, transparent 100%),
+                radial-gradient(closest-side circle at 50% 75%, black 100%, transparent 100%),
+                linear-gradient(to right, white 50%, black 50%);
+}
+/*
+    Position: static | relative | absolute | fixed | sticky ;
+    Las propiedades offset mueven un elemento posicionado 
+    los cuales son: relative | absolute | fixed | sticky 
+    donde cada uno de estos tiene su referencia diferentes.
+    Segun el borde indicado con:
+                                    * top
+                                    * right
+                                    * bottom
+                                    * left
+*/
+/*
+    Position: relative; : * su referencia es su ppcision inicial 
+                          * aplicado a un elemnto no modificana 
+                            nada en su layout
+                          * al moverlo con las propiedasdes offset
+                            reserva su espcacio.
+*/
+/*
+    Position: absolute;   * Su referencia es su ancestro posicionado
+                            mas cercano.
+                          * Pierde su posicion en el flujo y no 
+                            y no reserva sue spacio.
+                          * si tenia dimenciones fijas se mantienen.
+                          * si tenian dimenciones automaticas se ajustaran
+                            a su contenido.
+*/
+.titule{
+    position: relative;
+    bottom: 1em;
+}
+.box-p{
+    display: inline-block;
+    position: relative;
+}
+.relative{
+    margin: 1em;
+}
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+.two{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: blue;
+}
+
+
+.absolute{
+    margin: 1em;
+    left: 2em;
+}
+.box1{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+.two2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: blue;
+}
+.box-absolute{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    left: 4em;
+    top: 5.2em;
+}
+.box-span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px; 
+}
+.card{
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 6px 6px 5px var(--text-color);
+}
+.card-img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.card-title{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0,.75);  
+    color: #fff;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}

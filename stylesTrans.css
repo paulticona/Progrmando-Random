@@ -1,0 +1,57 @@
+*,
+*::after,/*Pseudoelmento*/
+*::before{
+    box-sizing: border-box;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.titulo, .titulo2{
+    display: flex;
+    margin: 15px;
+}
+.box, .box2{
+    display: flex;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    /* las transiciones siempre se realizan
+    con un evento, las tranciones es preferible utilizar
+    propiedades como color o backgruoun-color */
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s, 1s;
+}
+
+.box:hover{
+    background-color: rgb(13, 43, 43);
+    color: black;
+}
+.box2{
+
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    transition: transform 0.5s;
+}
+.box2:hover{
+    background-color: rgb(13, 43, 43);
+    color: black;
+    transform: translate(50%);
+}

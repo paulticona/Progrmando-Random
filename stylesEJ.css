@@ -1,0 +1,50 @@
+:root{
+    --first-color:#007BDF;
+    --first-color-alt:#006DC6;
+    --second-color:#00CBFF;
+    --second-color-alt:#00BFF0;
+    --thirt-color:#FF3C32;
+    --thirt-color-rgba: rgba(255,60,50,.5);
+    --thirt-color-alt: #FF2419;
+    --accent-color: #FBA905;
+    --accent-color-alt: #F1A000;
+    --dark-color: #282d31;  
+    --dark-color-alt: #141618;
+    --border-color:#DFE0E0;
+    --text-color:#53575A;
+    --body-bg:#fafdff;
+    --font-main:sans-serif;
+    --font-size:16px;
+    --line-height:1.6;
+    --header-height:8rem;
+    --max-width:1200px;
+    --width: 0;  
+}
+html{
+    
+    font-family: var(--font-main);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+*,
+*::after,/*Pseudoelmento*/
+*::before{
+    box-sizing: border-box;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+body::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--thirt-color);
+    /* usando .vw podemos controlar el aumento de la barra*/
+    width: calc(var(--width)*1vw);
+}

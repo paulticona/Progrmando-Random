@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PseudoElementos</title>
+    <link rel="stylesheet" href="stylesPE.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo1">PseudoElementos</h1>
+        <p>aparenta ser un elemnto pero no existe</p>
+    </header>
+    <main class="main">
+        <article>
+            <h2>::first-line | ::first-letter :</h1>
+            <ul>
+                <li><code>::first-line</code>:  Solo funciona para elemntos
+                    de bloque.
+                <h5>Ejemplo:</h3>
+                <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Pariatur aliquam dignissimos dolorem quis fugiat iusto 
+                    reiciendis quae atque doloribus voluptas, nulla nobis totam 
+                    veritatis quidem possimus iste deleniti aperiam velit!</p>
+            </li>
+            <li><code>::first-letter</code>:  Selecciona la primera letra
+                o la primera linea.
+                <h5>Ejemplo:</h3>
+                <p class="p2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Pariatur aliquam dignissimos dolorem quis fugiat iusto 
+                                          reiciendis quae atque doloribus voluptas, nulla nobis totam 
+                                          veritatis quidem possimus iste deleniti aperiam velit!</p>
+            </li>
+            </ul>
+        </article>
+        <article>
+            <h2>::before | ::after</h2>
+            <ul>
+                <li>
+                    <code>::before</code>: crea un pseudo-elemento que es el primer hijo 
+                    del elemento seleccionado con el atributo content:xx. 
+                    <h5>Ejemplo:</h5>
+                    <p class="p3">
+                        creando contenido con la psudoelemntos.
+                    </p>
+                </li>
+                <li>
+                    
+                    <code>::after</code>:  coincide con el último hijo virtual del elemento seleccionado. Se usa generalmente para añadir
+                     contenido estético a un elemento, usando la propiedad CSS content:xx.
+                     <h5>Ejemplo:</h5>
+                    <p>Aquí está el ejemplo en vivo del código anterior. <br>
+                        Tenemos algunos <span data-decription="colección de palabras y puntuación">texto</span> aquí con algunos 
+                        <span data-decription="ventanas emergentes pequeñas que también se ocultan de nuevo"> información sobre herramientas</span><br>
+                                No seas tímido, desplázate para echar un vistazo  <span data-decription="no ser tomado literalmente">aqui</span>
+                    </p>
+                </li>
+            </ul>
+        </article>
+        <article class="article1">
+            <h1 class="Quotes">
+                Dentro de unas comilla personalizables con Quotes
+            </h1>
+        </article>
+        <article>
+            <div class="precios">
+                <h3>Costos:</h3>
+                <p>Teclado:</p><p class="moneda usd">10</p>
+                <p>Maouse:</p><p class="moneda pen">20</p>
+                <p>Monitor:</p><p class="moneda cop">30</p>
+                <p class="mensaje">Precios en <span>Oferta!!!</span></p>
+            </div>
+            <div class="before-after">
+                <div class="corazon"></div>
+            </div>
+        </article>
+        
+        <article class="before-image">
+            <div class="img-initial">
+                <h1>lista con CHECK-img:</h1>
+                <ul class="lista">
+                    <li class="XD">Item 1</li>
+                    <li class="XD">Item 2</li>
+                    <li class="XD">Item 3</li>
+                    <li class="XD">Item 4</li>
+                </ul>
+                <ol class="listao">
+                    <li class="XD">Item 1</li>
+                    <li class="XD">Item 2</li>
+                    <li class="XD">Item 3
+                        <ul class="lista">
+                            <li class="XD">Item 1</li>
+                            <li class="XD">Item 2</li>
+                            <li class="XD">Item 3</li>
+                            <li class="XD">Item 4</li>
+                        </ul>
+                    </li>
+                    <li class="XD">Item 4</li>
+                </ol>
+            </div>
+            <div class="counter-initial">
+                <h1>
+                    Contador::before :
+                </h1>
+                <h1>
+                    Manual de css:
+                </h1>
+                <div class="chapters">
+                    <h4 class="chapter">Introduccion</h4>
+                    <h4 class="chapter">Box model</h4>
+                    <h4 class="chapter">Selectores</h4>
+                    <h4 class="chapter">Posicionamiento</h4>
+                </div>
+            </div>
+            <div class="counters">
+                    <h1>
+                        Contador::before :
+                    </h1>
+                    <h1>
+                        Listas anidadas:
+                    </h1>
+                    <ol class="list1">
+                        <li class="items">Item</li>
+                        <li class="items">Item</li>
+                        <li class="items">Item</li>
+                        <li class="items">Item
+                            <ol class="list1">
+                                <li class="items">Item</li>
+                                <li class="items">Item</li>
+                                <li class="items">Item
+                                    <ol class="list1">
+                                        <li class="items">Item</li>
+                                        <li class="items">Item</li>
+                                        <li class="items">Item</li>
+                                    </ol>
+                                </li> 
+                                <li class="items">Item</li>
+                            </ol>
+                        <li class="items">Item</li>
+                        </li>
+                    </ol>
+            </div>
+            <div class="temary">
+                <div class="class">
+                    <h1>Temario:</h1>
+                    <h3 class="class-title">Box model :</h2>
+                        <p class="class-topic">Width</p>
+                        <p class="class-topic">Height</p>
+                        <p class="class-topic">Padding</p>
+                        <p class="class-topic">list-image</p>
+                </div>
+                <div class="class">
+                    <h3 class="class-title">Listas :</h2>
+                        <p class="class-topic">Width</p>
+                        <p class="class-topic">Height</p>
+                        <p class="class-topic">Padding</p>
+                        <p class="class-topic">list-image</p>
+                </div>
+                <div class="class">
+                    <h3 class="class-title">Contadores :</h2>
+                        <p class="class-topic">Width</p>
+                        <p class="class-topic">Height</p>
+                        <p class="class-topic">Padding</p>
+                        <p class="class-topic">list-image</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="degradado-lineal"><h3>degradado lineal</h3></div>
+            <div class="degradado-lineal2"><h3>degradado Stop-eado</h3></div>
+            <div class="degradado-lineal3"><h3>degradado en Angulo</h3></div>
+            <div class="degradado-lineal4"><h3>degradado Repetitivo</h3></div>
+            <div class="degradado-lineal5"><h3>degradado Radiales</h3></div>
+            <div class="degradado-lineal6"><h3>degradado con kewords</h3></div>
+            <div class="degradado-lineal7"><h3>degradado Radial Repetitivo</h3></div>
+            <div class="degradado-lineal8"></div>
+        </article>
+        <article>
+            <div class="box-p relative">
+                <h3 class="titule">Position: relative;</h3>
+                <div class="box one">uno</div>
+                <div class="box two">dos</div>
+                <div class="box three">tres</div>
+                <div class="box four">cuatro</div>      
+            </div>
+            <div class="box-p absolute">
+                <h3 class="titule">Position: absolute;</h3>
+                <div class="box1 one1">uno</div>
+                <div class="box1 two2">dos</div>
+                <div class="box1 three3">tres</div>
+                <div class="box1 four4">cuatro</div>      
+            </div>
+            <div class="box-absolute">
+                    <span class="box-span">A</span>
+            </div>
+        </article>
+       
+            <div class="card">
+                <img class="card-img" src="./img/ojales.jpg" alt="">
+                <p class="card-title">Ojales</p>
+            </div>
+            <br><br><br>
+        
+    </main>
+</body>
+</html>

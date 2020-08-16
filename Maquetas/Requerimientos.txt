@@ -1,0 +1,93 @@
+
+
+
+                                                        EVA-CORP
+
+MISION
+    EVA-CORP intenta ofrecer la mejor experiencia de asesoramiento informático en Marketing Digital
+    a personas con negocio, emprendedores, profesionales creativos, empresas y consumidores de todo el mundo 
+    a través de sus innovadoras soluciones de estrategias, software e Internet. 
+    Además de promover estilos de vida saludables, trabajando desde casa y la comodidad de sus dispositivos.
+VISIÓN
+    Ser conciderados por sus clientes como una opción viable para transformar su empresa al mundo digital 
+    ofreciendo soluciones y servicios basados principalmente en la innovación, tecnología avanzada, 
+    servicio y calidad que supere sus expectativas. usando la creatividad como valor añadido.
+
+
+                                REQUERIMIENTOS DE EVA-CORP
+
+
+INTRODUCCION:
+    OBJETIVO:
+        Servicio y acesoramiento de Marketing digital.
+    ÁMBITO:
+        Apuntaremos al sector de pequeñas y medianas empresas.
+        Personas con negocio.
+        Nuestra tecnología estara respaldada con las redes sociales.
+    DEFINICIONES, SIGLAS:
+        Ecomerce: negocios enteramente digitales basados en paginas web interactivas.
+        Analisis de información en redes a travez de sus mismas herramientas: Google Analitics, etc.
+    REFERENCIAS:
+        LEAD: empresa dedicada al Marketing Digital (http://www.somoslead.com/)
+        MarcoCreativo: emprendedor dedicado al desarrollo y creacion de marcas digitales(https://marcocreativo.es/)
+    VICION GLOBAL:
+        Desarrollar estragias y software para la introduccion de los negocios al mundo digital
+        haciendo que la inverción de los clientes de sus frutos a travez del tiempo.
+
+
+DESCRIPCION GENERAL:
+    PERSPECTIVA DEL PRODUCTO:
+        Se proyecta implementar una pagina web interactiva, para que el usiario llegue a una conclucion clara y contrate nuestro servicio,
+        implementar la progresive web app para mayor acercamiento.
+    FUNCIONES DEL PRODUCTO:
+        Descripcion y detalle del servicio.
+        Gestion de usuarios.
+        Muestra de protafolios y catálogos.
+        Gestion de comunicación y contacto.
+        gestion de presupuestos estandarizados.
+        Planes de servicio.
+        Conección con otros sistemas de información.
+    CARACTERISTICAS DEL USUARIO:
+        Gestión de usuarios:
+            Registro automatico de clientes.
+        Gestión de comunicaión:
+            Sistema de chat en vivo con el cliente.
+        Gestión de presupuestos estandarizados:
+            Presupuestos solicitados de la entrada de estandares 
+            Presupuestos realizados a travez del catalogo para clientes profecionales.
+    RESTRICCIONES:
+        Esta pagina web dependerá del recurso humano y tecnológico, es obvio tener  acceso a internet.
+    SUPOCICIONES Y DEPENDENCIAS:
+        Los requisitos descritos en este documento pueden cambiar, pues los procesos son dinámicos 
+        y por lo tanto cambia los requisitos del software, para lo cual es necesario que las 
+        fases de análisis y diseño estén bien documentadas y además definir una fase y metodología de mantenimiento de la pagina web.     
+        Dependencias por consumo de APIs sies que se da el caso.
+
+
+
+REQUISITOS ESPECIFICOS:
+    REQUISITOS FUNCIONALES:
+        Gestión de usuarios:
+            Requisito1: formularios para la intruccion de datos del usuario 
+            Requisito2: permitir el registro con  cuentas de redes sociales.
+        Gestión de comunicaión:
+            Requisito3: Usuario registrado con perfil traida desde una base de datos segun el Requisito1 y 2.
+        Gestión de presupuestos estandarizados:
+            Requisito4: opciones de los prepuestos de la proforma(3 a mas opciones para elegir) 
+            Requisito5: presupuesto generado mediante el Requisito6
+            Requisito6: catalo con descripcion de precios. 
+    REQUISITOS DE INTERFAZ:
+        Las interfaces de usuario trataremos de manejar el concepto de 'intuitivo' por supesto el orden y la calidad de colores
+    REQUISITOS DE RENDIMIENTO:
+        Coseguir valores de carga aceptables para el usuario: consumo de RAM y GPU a valores minimos.
+    REQUISITOS DE DISEÑO:
+        Usaremos los leguajes y tecnologias mas estables a partir de las fecha de desarrollo.
+    ATRIBUTOS DE CALIDAD:
+        Seguridad con encriptación de usuario.
+        uso de cookies no intrusivos.
+
+
+
+FUENTE:
+    CALIDA DE SOFTWARE https://sites.google.com/site/fusmcalidaddelsoftware/proyecto/g-informe-de-especificacion-de-requerimientos/3-requisitos-especificos/3-5-atributos-del-sistema
+

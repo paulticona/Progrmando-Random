@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>java Script</title>
+</head>
+<body>
+    <h1>Script</h1>
+    <script>
+        var Venta="AddissonWesley";
+        function BookTypes(nombre){
+        if(nombre=="McGrawHill")
+            return nombre;
+        else{
+            return "no trabjamos co editorial"+nombre+".";
+        }
+        Libro={mylibro:"Arquitectura de redes de computares",editorial:BookTypes("McGrawHill"),
+            Nuevaeditorial:Venta}
+            document.write(Libro.mylibro);
+            document.write(Libro.editorial);
+            document.write(Libro.Nuevaeditorial); 
+        } 
+    </script>
+    <script>
+        String =wwe3;
+        var acotacion="El estudia con el libro\"Arquitectua y estrusctura de computadores\" de W. Stallings";
+        document.write(acotacion);
+        
+        document.write(wwe3);
+    </script>
+    <script lang="">
+    </script>
+    <form action="">
+        <input type="radio" name="sex">Male
+        <input type="radio" name="sex">female enter prigdate:
+        <input type="radio" name="birthdate" size="10">XD
+    </form>
+    <script lang="JavaScript">
+        document.writeln(document.forms[0].birthdate.value);
+    </script>
+    <script>
+
+
+        function show_props(obj, obj_name){
+            var result="";
+            for(var i in obj){
+                result+=obj_name+"."+i+"="+obj[i]+"\n"
+                return result;
+            }
+        }
+        show_props(informaticBook1, informaticBook1);
+    </script>
+
+    
+    <script>
+        //para Javascript esta simple variable ya cuenta como objeto
+        informaticBook1 = {title:"Programación en JavaScript", 
+                            author:"Danny Goodman", 
+                            year:1997,
+                            index:{chapter:1,section:7}}
+        //con el metodo objet.values podemos mostrar el array o propiedades
+        console.log(Object.values(informaticBook1));
+
+        //javaScript POO
+        function booK(titulo, autor, año){
+            this.titulo=titulo;
+            this.autor=autor;
+            this.año=año;
+        }
+        function image (nombre, URL, copyright, refNum){
+            this.nombre = nombre
+            this.URL = URL
+            this.copyright = copyright
+            this.refNum = refNum
+        }
+        informaticBook0=new booK("Programacion en JavaScript", "Danny Godman", 1995);   
+        console.log(Object.values(informaticBook0));
+        informaticBook2=new booK("c guia de autoenseñanza", "paul ticona", 1996);
+        console.log(Object.values(informaticBook2));
+    </script>
+
+</body>
+
+</html>

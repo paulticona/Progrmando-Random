@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex;
+    background: yellow;
+}
+.flex-item{
+    font-size: 20px;
+    background: gray;
+    margin: 0.5em;
+}

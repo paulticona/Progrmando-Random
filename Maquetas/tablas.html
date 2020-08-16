@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <table>
+        <caption>Mi horario de clases</caption>
+        <colgroup>
+            
+            <!--<col span="0">-->
+            <col span="" style="background: rgb(100, 120, 200)">
+        </colgroup>
+        <thead>
+            <tr><!--estas son las filas-->
+                <th><!--celda o table data-->
+                 lunes</th>
+                <th><!--encabezado de tabla-->Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"><!--rellenar espacios en columnas-->Html</td>
+                <td>Css</td>
+                <td rowspan="2">Java</td>
+                <td>Python</td>
+                <td>Matematicas</td>
+            </tr>
+            <tr>
+                <td>go</td>
+                <td>bigdat </td>
+                <td>lol</td>
+            </tr>
+            <tr>
+                <td colspan="5"><!--rellenar espacion en filas-->Recreo</td>
+            </tr>
+            <tr>
+                <td>algorimos</td>
+                <td>angular</td>
+                <td>js</td>
+                <td>git</td>
+                <td>fisica</td>
+            </tr>
+            
+        </tbody>
+        <tfoot><!--pie de tabla-->
+            <tr style="background: yellow">
+                <td>1cre</td>
+                <td>2cre</td>
+                <td>3cre</td>
+                <td>4cre</td>
+                <td>5cre</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+        <a href="index.html"><h1 style="color: green">Volver al menu</h1></a>
+   
+</body>
+</html>

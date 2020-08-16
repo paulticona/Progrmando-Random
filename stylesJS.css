@@ -1,0 +1,61 @@
+body{
+    background-color: gray;
+}
+.box{
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.title{
+    color:black;
+    font-size: 2em;
+    font-family: sans-serif;
+    
+}
+.divBox{
+    height: 2.5em;
+    width: 5em;
+    background-color: aqua;
+    font-size: 25px;
+
+}
+.prueba{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.ball{
+    --size: 60px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: red;
+    margin: auto;
+}
+.checkbox{
+    display: inline-block;
+}
+.video{
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.div-box{
+    padding: 2em;
+    border: 1px solid #9999;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.img img{
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,148 @@
+body{
+    
+    margin: 0;
+    background-color: #2a343b;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    color:rgb(166, 166, 176);
+}
+.buttons{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.button{
+    background: none;
+    outline: none;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #ffd6d5;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: relative;
+    width: 175px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+/*primer efecto aplicado en el botom 1*/
+.button-fill{
+    transition: color 0.4s;
+}
+.button-fill:hover{
+    color: #2a343b;
+}
+.button-fill::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff647c;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+}
+.button-fill:hover::before{
+    transform: translateX(0);
+}
+
+/*segundo efecto en el boton 2*/
+.button-cross{
+    transition: color 0.4s;
+}
+.button-cross:hover{
+    color: #2a343b;
+}
+.button-cross::before,
+.button-cross::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff647c;
+    z-index: -1;
+    transition: transform 0.6s linear;
+}
+.button-cross::before{
+    transform: rotatey(90deg);
+}
+.button-cross::after{
+    transform: rotatex(90deg);
+}
+.button-cross:hover::before,
+.button-cross:hover::after{
+    transform: rotate(0deg);
+}
+
+/*efecto el tercer botton*/
+.button-grow{
+    letter-spacing: -1px;
+    transition: box-shadow 0.5s, letter-spacing 0.5s;
+}
+.button-grow:hover{
+    letter-spacing: 3px;
+    box-shadow: 0 0 5px 5px #ff647c;
+}
+/*efecto del cuarto boton;*/
+.button-scale-text{
+    color: #ff647c;
+}
+.button-scale-text:hover{
+    color: #2a343b;
+}
+.button-scale-text::before{
+    content: attr(data-content);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ff647c;
+    background-color: #2a343b;
+    opacity: 0;
+    transform: scale(5);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.button-scale-text:hover::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.button-shiny{
+    transition: color 0.4s;
+}
+.button-shiny:hover{
+    color: #2a343b;
+}
+.button-shiny::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: -1;
+}
+.button-shiny:hover::before{
+    background-color: #ff647c;
+}
+.button-shiny:hover::before{
+    
+}

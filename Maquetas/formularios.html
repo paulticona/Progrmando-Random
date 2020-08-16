@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>formularios</h1>
+    <form><!--etiqueta de formularios que debe contener campos-->
+        <!--<div>
+            <label for="nombre">ingrese nombre</label>
+            <input name="nombre" type="text">receptor o entrada de datos
+        </div>-->
+        <fieldset>
+            <legend><!--tema del formulario-->Tus datos Personale</legend>
+            <div>
+                <input type="text" name="username" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label>
+                    ingrese su correo
+                    <input type="email">
+                </label>
+            </div> 
+        </fieldset>
+        <fieldset>
+            <legend>Tus Datos en la plataforma</legend>
+        
+        <div>
+            <label>
+                ingrese su contraseña
+                <input required type="password" name="password">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Ingrese fecha
+                <input type="date">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                ingrese su telefono
+                <input type="number">
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Tus pasatiempos</legend>
+        <label for="">
+            Musica
+            <input type="checkbox">
+        </label>
+        <label for="">
+                deporte
+                <input type="checkbox">
+            </label>
+        <label for="">
+            dota
+            <input type="checkbox">
+        </label>
+        <label for="">
+                baile
+                <input type="checkbox">
+            </label>
+        <label for="">
+            natacion
+            <input type="checkbox">
+        </label>
+    </fieldset>
+        <fieldset>
+            <legend>Tu genero</legend>
+            <label for=""><input type="radio" name="genero">hombre</label>
+            <label for=""><input type="radio" name="genero">mujer</label>
+            <label for=""><input type="radio" name="genero">lol</label>
+        </fieldset>
+        <fieldset>
+            <legend>Seleciona y opciones</legend>
+            <label for="country">escoje tu pasatiempos
+                <select name="country" id="country">
+                    <optgroup label="America">
+                        <option value="Peru">Peru</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="Peru">Argentina</option>
+                        <option value="Colombia">gg</option>
+                        <option value="Venezuela">Venggggezuela</option>
+                    </optgroup>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escribe tu mensaje"></textarea>
+            
+                </select>
+            </label>
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+    <a href="index.html"><h2>Volver</h2></a>
+</body>
+</html>

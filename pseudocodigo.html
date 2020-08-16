@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudoclases</title>
+    <link rel="stylesheet" href="stylesPS.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo1">Pseudoclases</h1>
+        <p>Estilos especiales dependiendo del contexto, posicion o estado.</p>
+    </header>
+    <main class="main">
+        <article class="a1">
+            <h1>:root</h1>
+            <p>La pseudoclase de CSS :root selecciona el elemento
+                rais de un documento aplicado a HTML. :Root
+                representa el elemento html y es identico al 
+                selector html excepto que su nivel de especificidad
+                es mayor y sive para declarar variables css.
+            </p>
+        </article>
+        <article class="a2">
+            <h1>:hover</h1>
+            <p>La pseudoclase de CSS :hover se presenta cuando el 
+                usuario coloca el puntero sobre algun elemento, pero
+                no necesariamente esta activo. en pantalla de moviles
+                touch :hover es problematico.
+            </p>
+        </article>
+        <article class="a3">
+            <h1>:active</h1>
+            <p>La pseudoclase de CSS :active cubre en el caso 
+                de que el elemento esta  siendo activado por el
+                usuario. Cuando se interactua con el raton, se corresponde
+                en el momento que el usuria presiona el boton del raton
+                hasta el momento en que lo suelta a menudo es usando en los 
+                elemntos A Y Button tambien el orden importa: <br>
+                1. :link{...} <br>
+                2. :visited{...} <br>
+                3. :hover{...} <br>
+                4. :active{...} <br>
+            </p>
+        </article>
+        <article class="a4">
+            <h1>:target</h1>
+            <p>
+                    La pseudoclase de CSS :target representa el elemento unico,
+                    si existe alguno con ID coincidente con elm identificador 
+                    de fragmentos de la URL del documento.
+            </p>
+            <p>
+                <a href="#modal">Modal CSS</a>
+            </p>
+        </article>
+        <div id="modal" class="Modal">
+            <aside class="Modal-Box">
+                <h2>Hola soy bonito modal con CSS</h2>
+                <form action="">
+                    <input type="email" placeholder="email">
+                    <input type="password" name="password" id="" placeholder="password">
+                    <input type="submit" value="enviar">
+                </form>
+                <a href="#">Cerrar</a>
+            </aside>
+        </div>
+        <article>
+            <h1>
+                <code>:nth-child | :first-child | :last-child</code>
+            </h1>
+            <ul>
+                <li>
+                    <code>:nth-child</code>selleciona el elemento identificador
+                    que sea el enesimo hijo de su elemnto padre.
+                </li>
+                <li>
+                    <code>:first-child</code>selleciona el elemneto indicado
+                    que sea el primer hijo de sus elemento padre.
+                </li>
+                <li>
+                    <code>:last-child</code>selleciona el elemento identificador
+                        que sea elultimo hijo de su elemnto padre.
+                </li>
+            </ul>
+        </article>
+        <article>
+                <h1>
+                    <code>:nth-of-type | :first-of-type | :last-of-type</code>
+                </h1>
+                <ul>
+                    <li>
+                        <code>:nth-of-type</code>selleciona el elemento indicado
+                        que sea el enesimo hijo sin inportar la jerraquia dentro
+                        del elemneto padre.
+                    </li>
+                    <li>
+                        <code>:first-of-type</code>selleciona el elemneto indicado
+                        que sea el primer hijo sin inportar la jerraquia dentro
+                        del elemneto padre.
+                    </li>
+                    <li>
+                        <code>:last-of-type</code>selleciona el elemento indicado 
+                            que sea elultimo hijo sin inportar la jerraquia dentro
+                            del elemneto padre.
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>
+                    <code>:empty</code>
+                </h2>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+                <p>
+                    La pseudoclase :empty corresponde a un elemento sin ningun nodo
+                    hijo. solo cuando hay nodos de elemento o texto con uno o mas caracteres
+                        dentro del elemento ese se convierte en no vacio. PARA BORRAR ESPACIOS
+                        VACIOS DE ETIQUETAS VACIAS.
+                </p>
+            </article>
+    </main>
+</body>
+</html>
