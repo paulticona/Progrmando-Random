@@ -11,7 +11,10 @@ body{
 .flex-container1, 
 .flex-container2, 
 .flex-container3,
-.flex-container4{
+.flex-container4,
+.flex-container5,
+.flex-container6,
+.flex-container7{
     display: flex;
     border-radius: 10px;
     background: #506080;  
@@ -80,6 +83,44 @@ body{
     margin-left: .5em;
 }
 
+/*flex-grow y flex-shrink*/
+.flex-container6,
+.flex-container7{
+    display: flex;
+    font-size: 3em;
+    background: darkviolet;
+}
+.main{
+    background: green;
+    flex-grow: 1;/*fle-grow indica el factor de crecimiento
+                    el navegador divide el espacio enre la 
+                    cantidad total de factores de crecimiento
+                    sumandole siempre a susdimenciones
+                    predeterminada*/
+    border-radius: 10px;
+}
+.aside{
+    
+    background: red;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    background: pink;
+            /* los items toman espacios iguales segun
+                    el tamaño de la caja variable*/
+}
+.item:nth-child(even){
+    background: slategray;
+    flex-shrink: 1;/*tiene la misma logica que el flex-grow
+                    pero con la diferencia que lo hace
+                    al contrario restando la divicion
+                    del espacio sobrante*/
+}
+/*fle-grow end*/
 
 .box{
     margin: auto;
