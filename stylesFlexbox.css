@@ -50,6 +50,37 @@ body{
     /*No se nesecita tener elmentos para mover el contenido puede
     ser solo texto*/
 }
+
+
+.flex-container5{
+    display: flex;
+    height: 200px;
+    background-color: teal;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.flex-container5::before,
+.flex-container5::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 200px;
+    background: linear-gradient(to left, red,teal);
+    margin-right: .5em;
+    margin-left: 0;
+    /*el flex hace que los elementos sean totalmente flexibles
+    con un comportamiento de adaptace a cualquier pantalla
+    sin afectar a las configuraciones de boxmodel*/
+    flex: 1;
+}
+.flex-container5::after{
+    background: linear-gradient(to right, red,teal);
+    margin-right: 0;
+    margin-left: .5em;
+}
+
+
 .box{
     margin: auto;
 }
