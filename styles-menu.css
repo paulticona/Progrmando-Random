@@ -42,11 +42,12 @@ body{
 .menu-item{
     position: relative;
 }
-.sub-menu .sub-menu{
+.sub-menu, .sub-menu{
     left: 100%;
-    top: 0;
+    top: 34px;
+    left: 30px;
 }
-.sub-menu .menu-link{
+.sub-menu, .menu-link{
     padding: .5em 2em;
 }
 

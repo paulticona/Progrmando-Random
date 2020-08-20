@@ -84,8 +84,7 @@ body{
 }
 
 /*flex-grow y flex-shrink*/
-.flex-container6,
-.flex-container7{
+.flex-container6{
     display: flex;
     font-size: 3em;
     background: darkviolet;
@@ -99,6 +98,7 @@ body{
                     predeterminada*/
     border-radius: 10px;
 }
+
 .aside{
     
     background: red;
@@ -106,7 +106,7 @@ body{
     flex-direction: column;
 }
 .item{
-    width: 400px;
+    width: 100px;
     text-align: center;
     border-radius: 10px;
     background: pink;
@@ -159,4 +159,23 @@ body{
     color: brown;
     font-size: 30px;
 }
-
+.flex-container7{
+    display: flex;
+    height: 2em;
+}
+.item1{
+    display: flex;
+    background: palegreen;
+    border-radius: 10px;
+    /*flex-grow: 1;
+    flex-basis: 0; /*pra que las cjas de los items
+                    midan lo mismo apesar del cambio*/
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.item1:nth-child(even){
+    background: palevioletred;
+    
+}
