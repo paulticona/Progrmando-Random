@@ -170,7 +170,7 @@ body{
     /*flex-grow: 1;
     flex-basis: 0; /*pra que las cjas de los items
                     midan lo mismo apesar del cambio*/
-    flex: 1;
+    flex: 14;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -178,4 +178,37 @@ body{
 .item1:nth-child(even){
     background: palevioletred;
     
+}
+.flex-container8{
+    display: flex;
+    font-size: 1.5em;
+    background: rgb(56, 55, 55);
+    height: 400px;
+    width: 550px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    background: dodgerblue;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+.descuento{
+    background: green;
+    /*order pueno posicionar los elementos(todos
+    los elementos tiene valor cero) gracias a esto
+    yo puedo ordenar ami gusto a los elemntos que yo
+    quiero al inicio o al final*/
+    order: -1;
+    
+}
+.nota{
+    order: -2;
+    margin-left: 9px;
 }
