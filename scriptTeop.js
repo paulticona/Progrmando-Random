@@ -911,3 +911,10 @@ let inicia = () => {
         const valor2 = Number(document.getElementById('text2').value)       
 }
 */
+
+/*
+
+*/
+
+
+

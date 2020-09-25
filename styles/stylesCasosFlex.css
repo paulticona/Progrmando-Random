@@ -51,3 +51,105 @@
         border-right: 1px solid #222;
     }
 }
+.banner{
+    display: flex;
+    background: #fca652;
+    height: 300px;
+}
+
+
+/*styles de BANNER*/
+
+.banner__item:nth-child(1){
+    background: hsl(90, 100%, 40%);
+}
+.banner__item:nth-child(2){
+    background: hsl(30, 100%, 40%);
+}
+.banner__item:nth-child(3){
+    background: hsl(200, 100%, 40%);
+}
+.banner__item:nth-child(4){
+    background: hsl(280, 100%, 40%);
+}
+
+
+
+.banner__item{
+    display: flex;
+    flex: 1;
+    color: hsl(238, 100%,  11%);
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: flex-grow 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.banner__item:hover{
+    flex-grow: 10;
+}
+.banner__item:hover .banner__title{
+    transform: rotate(0);
+}
+
+.banner__title{
+    margin: 0;
+    transform: rotate(-90deg);
+    transition: transform 0.4s 0.2s;
+}
+
+/*styles de CHAT*/
+
+.chat__box{
+    margin-top: 1em;
+    /*background: yellow;*/
+    width: 100%;
+    
+    display: flex;
+
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.chat{
+    width: 360px;
+    background: #111;
+    min-height: 80vh;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chat__entry{
+    display: flex;
+    margin-bottom: 1em;
+}
+.chat__user{
+    width: 60px;
+    height: 60px;
+    /*como chat__user es hijo de chat__entry hereda el displa: flex
+    y automaticamente el flex-shrink: 1; se configuara en uno por defecto
+    par asolucionarlo hay que anularlo con flex-shrink: 0; o
+    flex: none;*/
+    flex: none;
+}
+.chat__error{
+    width: 60px;
+    height: 60px;
+}
+.chat__user img, .chat__error img{
+    width: 100%;
+}
+.chat__message{
+    color: hsl(191, 100%, 95%);
+    margin-left: 1em;
+}
+.chat__title, .chat__title1{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.chat__title{
+    color: red;
+}
+.chat__title1{
+    color: green;
+}
