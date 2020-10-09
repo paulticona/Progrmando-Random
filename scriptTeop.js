@@ -911,3 +911,24 @@ let inicia = () => {
         const valor2 = Number(document.getElementById('text2').value)       
 }
 */
+
+/*
+anchoVentana
+anchoTela
+telaPlizar = ((anchoVentana + 20) / 2) - anchoTela 
+
+pliegue = (telaplizar / cantidaPliegue) / 2
+
+espacio = ((anchoVentana + 20) / 2) / (pliegue + 1)
+
+total = pliegue + espacio
+
+hallar numero de plegues segun el ancho
+
+anchoVentana 
+
+*/
+
+
+
+
