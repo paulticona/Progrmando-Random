@@ -53,19 +53,6 @@
 }
 .banner{
     display: flex;
-<<<<<<< HEAD
-    background: cadetblue;
-    height: 300px;
-
-}
-.banner__item{
-    flex: 1;
-}
-.banner__title{
-    margin: 0;
-}
-
-=======
     background: #fca652;
     height: 300px;
 }
@@ -199,4 +186,3 @@ body{
     display: flex;
     flex: 1;
 }
->>>>>>> eca4bf202b0eed029a3c8d06628378b3d78e6f73

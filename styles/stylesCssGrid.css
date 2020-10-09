@@ -1,0 +1,65 @@
+*{
+    background-color: #133b5c;
+    box-sizing: border-box;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+body{
+    margin: 0;
+}
+
+.title-container{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.title, .interactive-title, .button-mostrar{
+    color: #f1f3f8;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*caja con temario interacctivo*/
+
+.box-interactive-container{
+    height: auto;
+    height: 100vh;
+    background: yellow;
+}
+.interactive-header{
+    display: flex;
+    height: 5%;
+    background: red;
+    align-items: center;
+}
+.interactive-title{
+    background: red;
+    margin-left: 1em;
+}
+.interactive-container{
+    display: grid;
+    height: 100vh;
+    background: darkcyan;
+    grid-template-columns: 25% 75%;
+}
+.lista-temario{
+
+    background: darkgreen;
+}
+.salida-temario{
+    background: darkmagenta;
+}
+.button-mostrar{
+    width: 100%;
+    border: 1px black solid;
+    height: 2.5em;
+    
+}
+.button-mostrar:hover{
+    background: #1d2d50;
+}
