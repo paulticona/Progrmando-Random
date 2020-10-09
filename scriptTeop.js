@@ -874,7 +874,7 @@ boton1.addEventListener('click', inicia)
 */
 
 
-/*
+
 //Ejercicio 3
 let mayorQue = (a,b) => {
         if(a > b){
@@ -896,7 +896,7 @@ let inicia = () => {
 
 let buton1 = document.querySelector('#button_inicia')
 buton1.addEventListener('click', inicia)
-*/
+
 /*
 //Ejercicio 4
 let comparar = (marca, modelo) => {

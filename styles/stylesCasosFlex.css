@@ -51,3 +51,16 @@
         border-right: 1px solid #222;
     }
 }
+.banner{
+    display: flex;
+    background: cadetblue;
+    height: 300px;
+
+}
+.banner__item{
+    flex: 1;
+}
+.banner__title{
+    margin: 0;
+}
+
