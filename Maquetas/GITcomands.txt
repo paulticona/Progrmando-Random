@@ -34,9 +34,9 @@
     
             git commit -m "Texto que identifique por que se hizo el commit"
     
-        subimos al repositorio
+        Subimos al repositorio
     
-            git push origin master
+            git push -u origin master
 
 
 ## GIT CLONE
@@ -98,13 +98,13 @@
 
         Subimos al repositorio
 
-            git push <origien> <branch>
+            git push -u origin master
         
         Subimos un tag
     
             git push --tags
-    
-        ## GIT LOG
+            
+ ## GIT LOG
 
         Muestra los logs de los commits
     
@@ -153,7 +153,7 @@
 
         Agregar repositorio remoto
         
-            git remote add origin <url>
+            git remote add origin <url> 
     
         Cambiar de remote
     
